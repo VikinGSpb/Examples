@@ -9,6 +9,9 @@ class Complex{
         result.imaginary = this.imaginary + CNumber.imaginary;
         return result;
     }
+    toString(){
+        return `${this.real}, ${this.imaginary}`;
+    }
 }
 
 let first = new Complex(1,1);
