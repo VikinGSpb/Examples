@@ -44,6 +44,32 @@ class Complex{
     }
 }
 
+class Queue{
+    constructor(){
+        this.size = 0;
+        this.main = [];
+    }
+
+    IsEmpty(){
+        if(this.size == 0) return true;
+        else return false;
+    }
+
+    Add(Elem){
+        this.main.push(Elem);
+        this.size++;
+    }
+
+    Out(){
+        this.main.shift();
+        this.size--;
+    }
+
+    Quantity(){
+        return this.size;
+    }
+}
+
 let first = new Complex(1,1);
 let second = new Complex(2,3);
 alert('first + second = ' + first.Sum(second));
@@ -51,3 +77,6 @@ alert('first - second = ' + first.Sub(second));
 alert('first * second = ' + first.MultComplex(second));
 alert('(1,1) * 5 = ' + first.MultNumber(5));
 alert('conjugate ' + first.Conjugate());
+
+
+let Que = new Queue();
