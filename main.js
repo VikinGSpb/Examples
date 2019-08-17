@@ -76,6 +76,14 @@ class Queue{
     }
 }
 
+class Stack extends Queue{
+    Out(){
+        this.main.pop();
+        this.size--;
+        return this;
+    }
+}
+
 let first = new Complex(1,1);
 let second = new Complex(2,3);
 /*alert('first + second = ' + first.Sum(second));
@@ -92,3 +100,11 @@ alert('queue elements - ' + Que);
 Que.Out();
 alert('quantity of elements in queue = ' + Que.Quantity());
 alert('queue elements - ' + Que);
+
+let Stack1 = new Stack();
+Stack1.Add({"bad" : 12, "good" : 13}).Add(14).Add([16,17,18,19]).Add("20").Add({});
+alert('quantity of elements in stack = ' + Stack1.Quantity());
+alert('stack elements - ' + Stack1);
+Stack1.Out();
+alert('quantity of elements in stack = ' + Stack1.Quantity());
+alert('stack elements - ' + Stack1);
