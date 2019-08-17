@@ -58,25 +58,37 @@ class Queue{
     Add(Elem){
         this.main.push(Elem);
         this.size++;
+        return this;
     }
 
     Out(){
         this.main.shift();
         this.size--;
+        return this;
     }
 
     Quantity(){
         return this.size;
     }
+
+    toString(){
+        return JSON.stringify(this.main);
+    }
 }
 
 let first = new Complex(1,1);
 let second = new Complex(2,3);
-alert('first + second = ' + first.Sum(second));
+/*alert('first + second = ' + first.Sum(second));
 alert('first - second = ' + first.Sub(second));
 alert('first * second = ' + first.MultComplex(second));
 alert('(1,1) * 5 = ' + first.MultNumber(5));
-alert('conjugate ' + first.Conjugate());
+alert('conjugate ' + first.Conjugate());*/
 
 
 let Que = new Queue();
+Que.Add({"bad" : 12, "good" : 13}).Add(14).Add([16,17,18,19]).Add("20").Add({});
+alert('quantity of elements in queue = ' + Que.Quantity());
+alert('queue elements - ' + Que);
+Que.Out();
+alert('quantity of elements in queue = ' + Que.Quantity());
+alert('queue elements - ' + Que);
