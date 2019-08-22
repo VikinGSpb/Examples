@@ -1,0 +1,37 @@
+html,body,header,main,footer{
+    display: flex; 
+    font: 20px "PT Sans" ,sans-serif;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    background-color: black;
+}
+    
+header{
+    background-color:red;
+    padding-top: 1%;
+    justify-content: center;
+}
+    
+main{
+    background-color:green;
+}
+    
+footer{
+    background-color:blue;
+    padding-top: 1%;
+    justify-content: flex-end;
+    font-size: 75%;
+}
+
+.headerDiv{
+    color: white;
+}
+
+.footerDiv{
+    color: pink;
+}

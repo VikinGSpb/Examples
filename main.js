@@ -93,7 +93,7 @@ alert('(1,1) * 5 = ' + first.MultNumber(5));
 alert('conjugate ' + first.Conjugate());*/
 
 
-let Que = new Queue();
+/*let Que = new Queue();
 Que.Add({"bad" : 12, "good" : 13}).Add(14).Add([16,17,18,19]).Add("20").Add({});
 alert('quantity of elements in queue = ' + Que.Quantity());
 alert('queue elements - ' + Que);
@@ -107,4 +107,4 @@ alert('quantity of elements in stack = ' + Stack1.Quantity());
 alert('stack elements - ' + Stack1);
 Stack1.Out();
 alert('quantity of elements in stack = ' + Stack1.Quantity());
-alert('stack elements - ' + Stack1);
+alert('stack elements - ' + Stack1);*/
