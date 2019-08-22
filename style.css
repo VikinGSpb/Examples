@@ -12,6 +12,7 @@ body{
 }
     
 header{
+    border:1px dashed black;
     background-color:red;
     padding-top: 1%;
     justify-content: center;
@@ -19,9 +20,13 @@ header{
     
 main{
     background-color:green;
+    flex-wrap: nowrap;
+    border-left:1px dashed black;
+    border-right:1px dashed black;
 }
     
 footer{
+    border:1px dashed black;
     background-color:blue;
     padding-top: 1%;
     justify-content: flex-end;
@@ -34,4 +39,18 @@ footer{
 
 .footerDiv{
     color: pink;
+}
+
+.complexDiv{
+    padding-left:1%;
+}
+
+.stackDiv{
+    padding-left:1%;
+    border-left:1px dashed black;
+}
+
+.queueDiv{
+    padding-left:1%;
+    border-left:1px dashed black;
 }
